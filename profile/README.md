@@ -1,104 +1,67 @@
-## Hi there 👋
-We are **[NIWebDesigns.co.uk](https://niwebdesigns.co.uk)**,  
-A passionate web design agency helping businesses build stunning, high-performance websites to grow their brand.
+# Useful Links by NI Web Designs
+
+Welcome to our collection of important links, including our portfolio, GitHub repositories, and social media profiles. Feel free to explore the links below!
 
 ---
 
-### About Us
-At NI Web Designs, we believe in delivering not just websites but business solutions that are optimized for growth. Our team of expert developers and designers craft tailored solutions for startups, small businesses, and enterprises alike.
+## 🌐 Websites & Portfolio
 
-We focus on:
-- **Custom Web Design**
-- **E-Commerce Solutions**
-- **SEO Optimization**
-- **Website Maintenance**
-- **Branding & UX/UI Design**
+- [NIWebDesigns.co.uk](https://niwebdesigns.co.uk)  
+   Our official website featuring our services and latest projects.
 
----
+- [EZTraining.co.uk](https://eztraining.co.uk)  
+   A custom-built training platform offering courses for professionals.
 
-### Our Portfolio
-Below are some of the websites we've proudly built for our clients. Check them out!
+- [BannedApps.uk](https://bannedapps.uk)  
+   A platform providing insights into banned apps across various regions.
 
-1. [NIWebDesigns.co.uk/Map Website](https://niwebdesigns.co.uk/map-website)  
-   *Our map-based website to showcase all projects.*
+- [Deramore290.org](https://deramore290.org)  
+   A community website for the Deramore 290 Lodge.
 
-2. [EZTraining.co.uk](https://eztraining.co.uk)  
-   *A professional training platform offering various courses.*
-
-3. [Bannedapps.uk](https://bannedapps.uk)  
-   *An informative site on apps banned in certain countries.*
-
-4. [Deramore290.org](https://deramore290.org)  
-   *A community website for the Deramore 290 Lodge.*
-
-5. [Danielandson.co.uk](https://danielandson.co.uk)  
-   *A business site for a local plumbing and heating service.*
+- [Danielandson.co.uk](https://danielandson.co.uk)  
+   A local plumbing and heating services website.
 
 ---
 
-### GitHub Organization Statistics
-We are actively contributing to open-source projects and maintaining various repositories under our GitHub organization. Check out some of our popular repositories:
+## 💻 GitHub Repositories
 
-- **[NIWebDesigns GitHub Organization](https://github.com/NIWebDesigns)**
+We actively contribute to open-source projects. Check out our GitHub repositories:
 
-Here are some key repositories:
+- [NIWebDesigns GitHub Organization](https://github.com/NIWebDesigns)  
+   Visit our GitHub organization page to explore all our repositories.
 
-- [NIWebDesigns/ProjectName](https://github.com/NIWebDesigns/ProjectName)  
-   *A powerful platform for managing web designs.*
+- [ProjectName](https://github.com/NIWebDesigns/ProjectName)  
+   A detailed project repository focused on web development solutions.
 
-- [NIWebDesigns/AnotherProject](https://github.com/NIWebDesigns/AnotherProject)  
-   *A tool to automate project deployment.*
-
-- [NIWebDesigns/CoolTool](https://github.com/NIWebDesigns/CoolTool)  
-   *An open-source tool for improving workflow automation.*
+- [AnotherProject](https://github.com/NIWebDesigns/AnotherProject)  
+   A tool for automating project deployment and management.
 
 ---
 
-### GitHub Organization Stats Overview
-While GitHub doesn’t provide an automatic stats card for organizations, here’s an overview of our public activity:
+## 📧 Contact & Social Media
 
-- **Number of Repositories**: ![Repo count](https://img.shields.io/github/search/NIWebDesigns/repo)
-- **Contributors**: ![Contributors](https://img.shields.io/github/contributors/NIWebDesigns)
-- **License**: ![License](https://img.shields.io/github/license/NIWebDesigns/ProjectName)
-- **Issues Opened**: ![Issues](https://img.shields.io/github/issues/NIWebDesigns/ProjectName)
-- **Pull Requests Merged**: ![PRs](https://img.shields.io/github/issues-pr-closed/NIWebDesigns/ProjectName)
+Stay connected with us via social media, or get in touch directly through email.
 
-> *Note: Replace `ProjectName` with the actual repository name for individual repo stats.*
-
-### GitHub Insights (Optional)
-We also use tools like **[GitHub Insights](https://github.com/marketplace/github-insights)** and **CodeClimate** to track the performance, health, and activity of our repositories. These tools allow us to:
-
-- Monitor repository performance.
-- Analyze code quality.
-- Track contributions and issues.
-
-Explore more on our GitHub [here](https://github.com/NIWebDesigns).
+- **Email**: [info@niwebdesigns.co.uk](mailto:info@niwebdesigns.co.uk)
+- **Twitter**: [Twitter Handle](https://twitter.com/yourhandle)
+- **LinkedIn**: [LinkedIn Profile](https://linkedin.com/company/niwebdesigns)
+- **Instagram**: [Instagram Profile](https://instagram.com/yourhandle)
 
 ---
 
-### Our Workflow
-We follow a well-structured approach to ensure each project meets client expectations:
+## 📂 Resources
 
-1. **Consultation**  
-   We start by understanding your business goals and project requirements.
-   
-2. **Planning & Strategy**  
-   We create a detailed plan and strategy to ensure smooth execution.
-   
-3. **Design & Development**  
-   We design the site using modern tools, followed by robust development.
-   
-4. **Testing & Launch**  
-   We thoroughly test the site for performance, security, and compatibility before going live.
-   
-5. **Ongoing Support**  
-   Post-launch, we provide continuous support to ensure your site runs smoothly.
+Here are some useful resources for web development and design:
+
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)  
+   An excellent resource for web developers with documentation on HTML, CSS, JavaScript, and more.
+
+- [CSS Tricks](https://css-tricks.com/)  
+   A blog covering all things related to web design and CSS.
+
+- [GitHub Documentation](https://docs.github.com/en)  
+   Official GitHub documentation to help you manage repositories and projects.
 
 ---
 
-### Let's Get in Touch!
-We'd love to hear from you! Whether you're looking for a new website, a redesign, or simply want to chat about your project, we’re here to help.
-
-- Visit our [Contact Page](https://niwebdesigns.co.uk/contact)
-- Follow us on [Twitter](https://twitter.com/yourhandle), [LinkedIn](https://linkedin.com/company/niwebdesigns), and [Instagram](https://instagram.com/yourhandle)
-- Drop us an email: [info@
+Thank you for visiting our page of useful links. Feel free to explore the links above, and reach out if you have any questions!
