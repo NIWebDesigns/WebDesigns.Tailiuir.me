@@ -7,7 +7,7 @@ countries = [
   "spain",
   "greece",
   "ulster",
-  "erimates",
+  "emirates",
   "poland",
   "portugal",
 ];
