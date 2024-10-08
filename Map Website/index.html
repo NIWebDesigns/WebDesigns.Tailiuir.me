@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Holidays Map</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Permanent+Marker"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Permanent+Marker"
+        rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="favicon.ico" rel="icon" type="image/png" />
@@ -18,99 +18,106 @@
 
     <meta property="og:title" content="Countries I have visited" />
     <meta
-      property="og:description"
-      content="Interactive map of countries visited by Glauber Ramos"
+        property="og:description"
+        content="Interactive map of countries visited by Glauber Ramos"
     />
     <meta
-      property="og:image"
-      content="https://glauberramos.github.io/visited-countries/backpack.png"
+        property="og:image"
+        content="https://glauberramos.github.io/visited-countries/backpack.png"
     />
     <meta
-      property="og:url"
-      content="https://glauberramos.github.io/visited-countries"
+        property="og:url"
+        content="https://glauberramos.github.io/visited-countries"
     />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <link
-      rel="canonical"
-      href="https://glauberramos.github.io/visited-countries"
+        rel="canonical"
+        href="https://glauberramos.github.io/visited-countries"
     />
     
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
-      name="description"
-      content="Interactive map of countries visited by Glauber Ramos, showcasing travel experiences around the world."
+        name="description"
+        content="Interactive map of countries visited by Glauber Ramos, showcasing travel experiences around the world."
     />
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Countries I have visited",
-        "description": "Interactive map of countries visited by Glauber Ramos",
-        "author": {
-          "@type": "Person",
-          "name": "Glauber Ramos",
-          "url": "http://www.glauberramos.com"
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Countries I have visited",
+            "description": "Interactive map of countries visited by Glauber Ramos",
+            "author": {
+                "@type": "Person",
+                "name": "Glauber Ramos",
+                "url": "http://www.glauberramos.com"
+            }
         }
-      }
     </script>
 
     <style>
-      body {
-        margin: 0;
-        font-family: 'Covered By Your Grace', cursive; /* Font styling */
-      }
-      #header {
-        text-align: center;
-        padding: 20px;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      .subheader {
-        font-size: 1.5em;
-      }
-      @media (max-width: 600px) {
-        .subheader {
-          font-size: 1.2em; /* Adjust font size for mobile */
+        body {
+            margin: 0;
+            font-family: 'Covered By Your Grace', cursive;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        #header {
+            text-align: center;
+            padding: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
         #header-info {
-          padding: 10px;
+            padding: 10px;
         }
-      }
+        .subheader {
+            font-size: 1.5em;
+        }
+        .link {
+            display: block; /* Stack links for better mobile layout */
+            margin: 5px 0;
+            text-decoration: none;
+            color: inherit; /* Inherit color from parent */
+        }
+        @media (max-width: 600px) {
+            .subheader {
+                font-size: 1.2em; /* Adjust font size for mobile */
+            }
+            #header-info {
+                padding: 5px; /* Reduced padding for mobile */
+            }
+        }
     </style>
-  </head>
-  <body>
-    <header id="header">
-      <img src="backpack.png" alt="Backpack icon" title="Backpack icon" />
-      <h1>Matthew's</h1>
-      <h2 class="subheader">visited countries</h2>
-      <div id="header-info">
+</head>
+<body>
+<header id="header">
+    <img src="backpack.png" alt="Backpack icon" title="Backpack icon" />
+    <h1>Matthew's</h1>
+    <h2 class="subheader">visited countries</h2>
+    <div id="header-info">
         <div id="statistic">
-          <div class="number-section">
-            <span id="number-countries" class="information"></span>
-            <span class="numbers">
-              <span id="globe-percent"></span>
-              <span>of</span>
-              <a
-                target="_blank"
-                href="http://en.wikipedia.org/wiki/Member_states_of_the_United_Nations "
-              >
-                193
-              </a>
-            </span>
-            <centre>
-              <a href="https://www.polarsteps.com/itsmat32143" class="link"><h2 class="subheader">See My Holiday Pictures</h2></a>
-              <a href="https://wanderlog.com/u/itsmat32143" class="link"><h2 class="subheader">And My Holiday Plans</h2></a>
-            </centre>
-          </div>
+            <div class="number-section">
+                <span id="number-countries" class="information"></span>
+                <span class="numbers">
+                    <span id="globe-percent"></span>
+                    <span>of</span>
+                    <a target="_blank" href="http://en.wikipedia.org/wiki/Member_states_of_the_United_Nations">
+                        193
+                    </a>
+                </span>
+                <div>
+                    <a href="https://www.polarsteps.com/itsmat32143" class="link">See My Holiday Pictures</a>
+                    <a href="https://wanderlog.com/u/itsmat32143" class="link">And My Holiday Plans</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </header>
-    <main id="map">
-      <div id="country-name"></div>
-      <div id="svg" class="full-map"></div>
-    </main>
-  </body>
+    </div>
+</header>
+<main id="map">
+    <div id="country-name"></div>
+    <div id="svg" class="full-map"></div>
+</main>
+</body>
 </html>
