@@ -8,8 +8,8 @@ body {
 }
 
 img {
-  width: 100px;
-  position: relative;
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
 }
 
 #header {
@@ -24,7 +24,6 @@ img {
 }
 
 #footer h4 {
-  width: 1200px;
   padding: 40px 0;
   margin: 0 auto;
   font-size: 1em;
@@ -66,7 +65,8 @@ h1 {
 }
 
 #header-info {
-  width: 1000px;
+  width: 100%; /* Allow full width for smaller screens */
+  max-width: 1000px; /* Limit maximum width */
   margin: 0 auto;
 }
 
@@ -92,7 +92,8 @@ h1 {
 
 #map .full-map svg {
   width: 100%;
-  height: 660px;
+  height: auto; /* Make height auto for responsiveness */
+  max-height: 660px; /* Limit maximum height */
   margin-top: 10px;
 }
 
@@ -124,9 +125,45 @@ a {
   font-size: 24px;
   font-weight: bold;
   color: #ffce5d;
-  background-color: rgb(26 135 134);
+  background-color: rgb(26, 135, 134);
   padding: 20px 0 0;
   border-radius: 5px;
   text-align: center;
   height: 28px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3em; /* Smaller font size for mobile */
+  }
+
+  .subheader {
+    font-size: 1.5em; /* Adjusted for mobile */
+  }
+
+  #header .information {
+    font-size: 2em; /* Smaller information text */
+  }
+
+  #country {
+    font-size: 1.8em; /* Adjusted country size */
+  }
+
+  .number-section {
+    font-size: 2em; /* Adjusted number section size */
+  }
+
+  .numbers {
+    font-size: 20px; /* Smaller size for mobile */
+  }
+
+  #country-name {
+    font-size: 18px; /* Adjust country name font size */
+  }
+
+  #header-info {
+    width: 90%; /* Use more width on mobile */
+    padding: 0 5%; /* Padding for mobile */
+  }
 }
