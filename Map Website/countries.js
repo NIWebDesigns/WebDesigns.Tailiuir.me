@@ -4,7 +4,6 @@ countries = [
   "france",
   "italy",
   "netherlands",
-  "spain",
   "greece",
   "ulster",
   "emirates",
