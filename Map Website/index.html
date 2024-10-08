@@ -15,32 +15,16 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-
     <meta property="og:title" content="Countries I have visited" />
-    <meta
-        property="og:description"
-        content="Interactive map of countries visited by Glauber Ramos"
-    />
-    <meta
-        property="og:image"
-        content="https://glauberramos.github.io/visited-countries/backpack.png"
-    />
-    <meta
-        property="og:url"
-        content="https://glauberramos.github.io/visited-countries"
-    />
+    <meta property="og:description" content="Interactive map of countries visited by Glauber Ramos" />
+    <meta property="og:image" content="https://glauberramos.github.io/visited-countries/backpack.png" />
+    <meta property="og:url" content="https://glauberramos.github.io/visited-countries" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link
-        rel="canonical"
-        href="https://glauberramos.github.io/visited-countries"
-    />
+    <link rel="canonical" href="https://glauberramos.github.io/visited-countries" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-        name="description"
-        content="Interactive map of countries visited by Glauber Ramos, showcasing travel experiences around the world."
-    />
+    <meta name="description" content="Interactive map of countries visited by Glauber Ramos, showcasing travel experiences around the world." />
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -82,12 +66,28 @@
             color: inherit; /* Inherit color from parent */
         }
         @media (max-width: 600px) {
+            #header h1 {
+                font-size: 2em; /* Adjust size for mobile */
+            }
+            #header h2 {
+                font-size: 1.5em; /* Adjust size for mobile */
+            }
             .subheader {
                 font-size: 1.2em; /* Adjust font size for mobile */
             }
             #header-info {
                 padding: 5px; /* Reduced padding for mobile */
             }
+            .link {
+                font-size: 1em; /* Adjust font size for links */
+            }
+        }
+        #map {
+            padding: 10px; /* Add some padding around the map */
+        }
+        #svg {
+            width: 100%;
+            height: auto; /* Ensure the SVG is responsive */
         }
     </style>
 </head>
