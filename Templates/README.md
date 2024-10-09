@@ -1,24 +1,16 @@
-<div style="text-align: center;">
-
 # My Template-Built Websites
 
-A collection of websites built using custom templates:
+Here is a collection of websites I've built using custom templates. Each link will take you directly to the live site.
 
-## 1. Encrypt Template  
-[View Site](https://niwebdesigns.co.uk/Templates/Encrypt/ "Encrypt Template")
+## Website 1: Encrypt Template
+[Encrypt Template](https://niwebdesigns.co.uk/Templates/Encrypt/ "Visit the Encrypt Template")
 
----
+## Website 2: [Insert Template Name]
+[Template Name](https://example.com "Visit the Template")
 
-## 2. [Template Name]  
-[View Site](https://example.com "Template Name")
-
----
-
-## 3. [Template Name]  
-[View Site](https://example.com "Template Name")
+## Website 3: [Insert Template Name]
+[Template Name](https://example.com "Visit the Template")
 
 ---
 
-For more information, feel free to contact me.
-
-</div>
+If you'd like to see more of my work or get in touch, feel free to contact me.
