@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 
 # URL of your TripAdvisor review page
-url = "https://www.tripadvisor.com/Your_Review_Page_URL"
+url = "https://www.tripadvisor.co.uk/Profile/itsmat32143?tab=reviews"
 
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
