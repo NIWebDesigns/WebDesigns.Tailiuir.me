@@ -1,10 +1,10 @@
 # My Links
 
-- **Lost & Found** [/Lost & Found](/Lost & Found)
-- **NI SECURITY SHOP** [/NI SECURITY SHOP](/NI SECURITY SHOP)
-- **Power Washing** [/Power Washing](/Power Washing)
-- **RETROBANNED** [/RETROBANNED](/RETROBANNED)
-- **Security Check** [/Security Check](/Security Check)
-- **Training RoomNl.co.uk** [/TrainingRoomNI.co.uk](/TrainingRoomNI.co.uk)
-- **Vapes** [/Vapes](/Vapes)
+- **Lost & Found** [/Templates/Lost & Found](/Templates/Lost & Found)
+- **NI SECURITY SHOP** [/Templates/NI SECURITY SHOP](/Templates/NI SECURITY SHOP)
+- **Power Washing** [/Templates/Power Washing](/Templates/Power Washing)
+- **RETROBANNED** [/Templates/RETROBANNED](/Templates/RETROBANNED)
+- **Security Check** [/Templates/Security Check](/Templates/Security Check)
+- **Training RoomNl.co.uk** [/Templates/TrainingRoomNI.co.uk](/Templates/TrainingRoomNI.co.uk)
+- **Vapes** [/Templates/Vapes](/Templates/Vapes)
 
