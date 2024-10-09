@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your TripAdvisor Reviews</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Custom Homepage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
+
 <body>
-    <h1>Your TripAdvisor Reviews</h1>
-    <div id="reviews">
-        <script>
-            fetch('reviews.json')
-                .then(response => response.json())
-                .then(reviews => {
-                    reviews.forEach(review => {
-                        const reviewDiv = document.createElement('div');
-                        reviewDiv.className = 'review';
-                        reviewDiv.innerHTML = `<h2>${review.title}</h2><p>${review.content}</p>`;
-                        document.getElementById('reviews').appendChild(reviewDiv);
-                    });
-                });
-        </script>
-    </div>
+    <header>
+        <h1>Welcome to My Homepage!</h1>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="q" placeholder="Search Google..." required>
+                <button type="submit">Search</button>
+            </form>
+            <form action="https://duckduckgo.com/" method="get">
+                <input type="text" name="q" placeholder="Search DuckDuckGo..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <section id="bookmarks">
+            <h2>Bookmarks</h2>
+            <div id="bookmarkButtons">
+                <button onclick="window.open('https://www.google.com', '_blank')">Google</button>
+                <button onclick="window.open('https://www.github.com', '_blank')">GitHub</button>
+                <button onclick="window.open('https://www.wikipedia.org', '_blank')">Wikipedia</button>
+                <!-- Add more bookmarks here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Current Time: <span id="currentTime">Loading...</span></p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
+
 </html>

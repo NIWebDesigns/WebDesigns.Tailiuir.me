@@ -1,18 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #404040; /* Darker grey background */
+    color: white; /* White text color for contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer is at the bottom */
+}
+
+header {
+    text-align: center;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #404040; /* Same dark grey as the body */
 }
 
 h1 {
-    text-align: center;
+    margin: 0;
 }
 
-.review {
-    background: white;
-    padding: 15px;
-    margin-bottom: 20px;
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-container form {
+    margin: 10px 0; /* Space between search forms */
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px; /* Set width for search input */
+    border: 1px solid #ccc; /* Light grey border */
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px;
+    background-color: #505050; /* Grey button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px; /* Space between input and button */
+}
+
+button:hover {
+    background-color: #606060; /* Darker grey on hover */
+}
+
+#bookmarks {
+    text-align: center;
+    margin: 20px;
+}
+
+#bookmarkButtons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #404040; /* Same dark grey as the body */
+    margin-top: auto; /* Push footer to the bottom */
 }
