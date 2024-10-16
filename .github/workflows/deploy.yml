@@ -12,7 +12,6 @@ on:
       - closed
       - reopened
 
-
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -46,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: '_site'
+          path: 'Myself/Issues'  # Updated path to Myself/Issues folder
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
