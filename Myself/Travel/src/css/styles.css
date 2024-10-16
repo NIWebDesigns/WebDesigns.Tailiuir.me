@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --main-bg-color: #FBFFFF;
+  --sec-bg-color: #404040;
+  --main-acc-color: #FAA916;
+  --sec-acc-color: #96031A;
+  --main-text-color: #1B1B1E;
+  --sec-text-color: #FBFFFF;
+  --rounded-border: 12px;
+  --border-style: #1B1B1E solid 1px;
+  --drop-shadow: drop-shadow(0px 2px 10px #404040);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: var(--main-bg-color);
+  margin: 0;
+}
+
+#login-page {
+  height: 100vh;
+  background: url('https://static.showit.co/file/t5GazwUVQneNSlBu7psHQw/161366/video-gif-mobile.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#login-form {
+  margin: auto;
+  border-radius: var(--rounded-border);
+  padding: 10px;
+  position: relative;
+  top: 200px;
+  width: fit-content;
+  background: rgba(251, 255, 255, .8);
+  text-align: center;
+  & legend {
+    font-size: 2rem;
+  }
+  & label {
+    padding-top: 10px;
+  }
+  & input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+header {
+  background: var(--main-acc-color);
+  filter: var(--drop-shadow);
+  & h1 {
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+#plan-trip-container {
+  max-width: 416px;
+  background: var(--main-bg-color);
+  padding-right: 30px;
+  & h2 {
+    background: var(--sec-bg-color);
+    color: var(--sec-text-color);
+    height: 130px;
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+  }
+  & .buttons {
+    margin-top: 20px;
+  }
+}
+
+label, input {
+  display: block;
+}
+
+label:not(:first-of-type) {
+  padding-top: 10px;
+}
+
+input {
+  background: var(--main-bg-color);
+  border-radius: var(--rounded-border);
+  border: var(--border-style);
+  min-width: 320px;
+  min-height: 40px;
+  padding: 0 20px;
+}
+
+.buttons {
+  margin: 10px;
+  background: var(--sec-acc-color);
+  color: var(--sec-text-color);
+  border-radius: var(--rounded-border);
+  border: var(--border-style);
+  height: 40px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#trip-stats-container {
+  background: var(--sec-bg-color);
+  color: var(--sec-text-color);
+  width: 80%;
+  min-height: 500px;
+  & h2 {
+    padding: 30px 50px;
+    margin-bottom: 0;
+  }
+  & h3 {
+    margin: 0;
+  }
+  & div{
+    padding-left: 50px;
+  }
+  & div:last-of-type {
+    font-size: 2rem;
+    & p {
+      margin-top: 10px;
+    }
+  }
+}
+
+#trip-details-container {
+  background: var(--sec-bg-color);
+  min-height: 940px;
+  padding: 10px 0;
+  & section {
+    background: var(--main-bg-color);
+    margin: 40px 20px;
+    min-height: 400px;
+    &  h2 {
+      position: relative;
+      left: -10px;
+      top: -25px;
+      background: var(--main-acc-color);
+      filter: var(--drop-shadow);
+      width: 250px;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+    }
+  }
+}
+
+.trips {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  & img {
+    width: 280px;
+    height: 180px;
+  }
+  & h3 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+  }
+}
+
+.trip-card {
+  text-align: center;
+  padding: 0 10px;
+}
+
+#pending-trips-section {
+  & .trip-card:first-of-type {
+    animation: 3s linear 0s bounce;
+  }
+}
+
+#search-results {
+  background: var(--sec-bg-color);
+  padding-bottom: 30px;
+  & h2 {
+    position: relative;
+    left: 20px;
+    top: 60px;
+    background: var(--main-acc-color);
+    font-size: 2.5rem;
+    filter: var(--drop-shadow);
+    width: 300px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+  }
+}
+
+.close-button {
+  float: right;
+}
+
+#results-container {
+  background: var(--main-bg-color);
+  width: 90%;
+  padding: 30px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-card {
+  border-radius: var(--rounded-border);
+  border: var(--border-style);
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  & img {
+    height: 85px;
+    width: 100px;
+    margin-right: 5px;
+    border-radius: 10px;
+  }
+}
+
+dialog {
+  text-align: center;
+  & p {
+    line-height: 1.7rem;
+  }
+  & span {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}
+
+.greyout {
+  opacity: .3;
+  background: var(--sec-bg-color);
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+

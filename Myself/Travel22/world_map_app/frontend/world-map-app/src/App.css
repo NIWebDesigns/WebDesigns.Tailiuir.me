@@ -1,0 +1,502 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at 10% 20%, rgb(67, 144, 233) 0%, rgb(78, 226, 198) 90.1%);
+}
+
+.main-title {
+  color: rgb(255, 166, 0);
+  font-size: 60px;
+  margin: 0 10px 0 0;
+  font-weight: bold;
+  font-family: 'Qwitcher Grypen';
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.app-header h1{
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  width: 900px;
+}
+
+#sub-title {
+  margin-left: 30px;
+  padding-top: 20px;
+  position: relative;
+  left: -13px;
+  top: 8px;
+}
+
+#logo {
+    height: 85px; 
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+
+.navigation {
+  color: white;
+  text-decoration: none;
+  gap: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 13px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.navigation a:hover {
+  background-color: #ffffff;
+  color: #2d2d2d;
+}
+
+.user-info {
+  position: right;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  width: 150px;
+}
+
+#user-name {
+  padding-bottom: 10px;
+}
+
+#user-icon {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#guest {
+  color: rgb(255, 140, 0);
+}
+
+.map-container {
+  height: 100vh;
+  width: 100%;
+  border: 2px solid red; 
+}
+
+.leaflet-container {
+  background: transparent;
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+/* Login, Register */
+
+.login-register-container {
+  width: 100%;
+  height: 100vh;
+  background: url('./images/map-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.auth-form-container-login {
+  background: rgba(255,255, 255,0.7);
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 350px;
+  position: relative;
+  left: 500px;
+}
+
+.auth-form-container-register {
+  background: rgba(255,255, 255,0.7);
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  height: 460px;
+  width: 350px;
+  position: relative;
+  left: 500px;
+}
+
+.auth-name-container, .login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  padding: 10px;
+}
+
+.username-reg, .password-reg, #email, #confirmPassword {
+  margin: 10px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  background: rgb(255, 255, 255);
+}
+
+.button-submit {
+  border: none;
+  background: radial-gradient(circle at 10% 20%, rgb(67, 144, 233) 0%, rgb(78, 226, 198) 90.1%);
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 30px 10px 10px 10px;
+  width: 300px;
+  position: relative;
+  left: 10px;
+  height: 50px;
+}
+
+.button-submit:hover {
+  background: linear-gradient(99deg, rgb(255, 166, 0) 14.7%, rgb(255, 99, 97) 73%);
+}
+
+.link-btn {
+  background: none;
+  color: black;
+  height: 50px;
+  position: relative;
+  top: 30px;
+  padding-left: 30px;
+}
+
+.link-btn:hover{
+  color: rgb(67, 144, 233);
+}
+
+/* Side bar */
+
+.content {
+  display: flex;
+  width: 100%;
+  min-height: 80vh; /* Set a minimum height */
+}
+
+.sidebar {
+  flex-shrink: 0;
+  width: 220px;
+  padding: 20px;
+  background-color: #2d2d2d; 
+  color: #ffffff;
+}
+
+.button-mark {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  height: 50px;
+  margin-bottom: 20px;
+  background: radial-gradient(circle at 10% 20%, rgb(67, 144, 233) 0%, rgb(78, 226, 198) 90.1%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.button-mark.active {
+  background: linear-gradient(99deg, rgb(255, 166, 0) 14.7%, rgb(255, 99, 97) 73%);
+}
+
+.button-mark:hover {
+  background: linear-gradient(99deg, rgb(255, 166, 0) 14.7%, rgb(255, 99, 97) 73%);
+}
+
+
+.sidebar div {
+  padding: 10px;
+}
+
+.sidebar span {
+  font-weight: bold;
+}
+
+.register-show-message {
+  margin-top: 0;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.register-show-message2 {
+  margin-top: 0;
+  text-align: left;
+  position: relative;
+  left: -260px;
+  width: 200px;
+  top: 60px;
+}
+
+.home-country-container {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+  align-items: flex-start;
+}
+
+.home-country-header {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 70px;
+  position: relative;
+  top: -25px;
+  left: -13px;
+}
+
+.home-country-text {
+  margin: 0;
+  width: 150px;
+  left: 10px;
+  font-size: 17px;
+}
+
+.home-country-shows {
+  margin: 0;
+  width: 150px;
+  top: 30px;
+  left: -135px;
+  position: relative;
+  font-size: 17px;
+}
+
+.home-country-image {
+  height: 60px;
+  width: 110px;
+  position: relative;
+  left: -170px;
+  top: -8px;
+}
+
+.home-country-selection {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -20px;
+}
+
+.home-save-button {
+  color: white;
+  position: relative;
+  left: -35px;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 60px;
+  background: radial-gradient(circle at 10% 20%, rgb(67, 144, 233) 0%, rgb(78, 226, 198) 90.1%);
+}
+
+.home-save-button:hover {
+  background: linear-gradient(99deg, rgb(255, 166, 0) 14.7%, rgb(255, 99, 97) 73%);
+}
+
+.CountCountryContainer {
+  background-image:
+  linear-gradient(125deg, rgba(247, 117, 61, 0.7), rgba(236, 159, 5, 0.7)), 
+    url('./images/map-bg.png'); 
+  background-size: cover;
+  background-position: left 30%;
+  background-repeat: no-repeat;
+  color: white;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.count-visited {
+  background-color: #1d72b8;  
+  color: white; 
+  font-weight: bold; 
+  padding: 8px 12px;  
+  border-radius: 12px; 
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);  
+  
+  &:hover {
+    background-color: #155a8a;  
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);  
+  }
+}
+
+
+/* For modaling */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  height: 400px;
+  z-index: 1000;
+  top: -100px;
+  position: relative;
+}
+
+.close {
+  margin-top:10px;
+  margin-right: 20px;
+  border-radius: 50%;  /* Round border for a circular shape */
+  border: 1px solid black;
+  font-size: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: black;
+  line-height: 25px;  /* To center the 'x' vertically */
+  text-align: center;  /* To center the 'x' horizontally */
+  float: right;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+#diary {
+  height: 85px; 
+  margin-left: 250px;
+  margin-top: 20px;
+  vertical-align: middle;
+}
+
+#start-today {
+  font-size: 40px;
+  text-align: center;
+}
+
+.start-today-disc {
+  top: -50px;
+  left: 70px;
+  position: relative;
+  width: 400px;
+  text-align: center;
+}
+
+#link-to-register{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(248, 79, 60);
+  border: 1px rgb(248, 79, 60) solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 200px;
+  position: relative;
+  top: 50px;
+  left: -80px;
+}
+
+#link-to-register:hover{
+ color: white;
+ background-color: #3cdfff;
+ border: 1px #3cdfff solid;
+}
+
+#close-disc{
+  position: relative;
+  top: 70px;
+  font-size: 14px;
+}
+
+/* Map Legend Styles */
+.map-legend {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  top: -100px;
+}
+
+.map-legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.map-legend-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+
+}
+
+/* Profile page */
+
+.profile-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  background: rgba(255,255, 255,0.7);
+  border-radius: 10px;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
