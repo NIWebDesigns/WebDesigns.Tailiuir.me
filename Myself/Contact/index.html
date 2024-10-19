@@ -3,27 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Send Money</title>
+    <title>Contact - [Your Name]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMW74luI/Tf6rwD5y/pT4jdz+GiYwny6aCkVjHg" crossorigin="anonymous">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
             color: #333;
-            padding: 20px;
         }
-        .send-money-box {
-            max-width: 400px;
+        .container {
+            max-width: 900px;
             margin: 50px auto;
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
-        .send-money-box h2 {
+        .profile-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 30px;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-info h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        .profile-info p {
+            font-size: 16px;
+            color: #777;
+            margin: 8px 0 0;
+        }
+        .contact-info, .social-media, .bank-details, .send-money-box {
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 500;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
             margin-bottom: 20px;
+            color: #007BFF;
         }
-        input[type="number"] {
+        .contact-info p, .bank-details p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .social-media-icons {
+            display: flex;
+            gap: 15px;
+            font-size: 28px;
+            margin-top: 10px;
+        }
+        .social-media-icons a {
+            color: #007BFF;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        .social-media-icons a:hover {
+            color: #0056b3;
+        }
+        .bank-details {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid #007BFF;
+            font-size: 16px;
+            color: #555;
+        }
+        .send-money-box input[type="number"] {
             width: 100%;
             padding: 10px;
             font-size: 18px;
@@ -48,11 +108,50 @@
 </head>
 <body>
 
-    <div class="send-money-box">
-        <h2>Send Money</h2>
-        <label for="amount">Enter Amount:</label>
-        <input type="number" id="amount" placeholder="60.00" step="0.01" min="1">
-        <a id="sendButton" class="send-btn" href="https://monzo.me/matthewtaylor89/60.00?h=Xqvzvg" target="_blank">Send</a>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            <div class="profile-info">
+                <h1>Your Name</h1>
+                <p>Professional Title or Company Name</p>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:yourname@email.com" class="btn">yourname@email.com</a></p>
+            <p><strong>Phone:</strong> +123-456-7890</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <h2>Connect with Me</h2>
+            <div class="social-media-icons">
+                <a href="https://linkedin.com/in/yourname" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/yourname" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <!-- Bank Details (Sensitive Information) -->
+        <div class="bank-details">
+            <h2>Bank Details</h2>
+            <p><strong>Bank Name:</strong> Your Bank</p>
+            <p><strong>Account Number:</strong> XXXX-XXXX-XXXX</p>
+            <p><strong>IBAN:</strong> Your IBAN</p>
+            <p><strong>SWIFT/BIC:</strong> Your SWIFT Code</p>
+        </div>
+
+        <!-- Send Money Section -->
+        <div class="send-money-box">
+            <h2>Send Money</h2>
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" placeholder="60.00" step="0.01" min="1">
+            <a id="sendButton" class="send-btn" href="https://monzo.me/matthewtaylor89/60.00?h=Xqvzvg" target="_blank">Send</a>
+        </div>
     </div>
 
     <script>
