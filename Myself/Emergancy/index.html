@@ -20,6 +20,7 @@
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            position: relative; /* Position relative for absolute positioning of button */
         }
         h1 {
             color: #007BFF;
@@ -61,15 +62,20 @@
             color: #777;
         }
         .edit-button {
-            position: absolute;
+            position: absolute; /* Absolute positioning */
             top: 20px;
             right: 20px;
-            padding: 10px;
+            padding: 10px 15px; /* Increased padding for better appearance */
             background-color: #007BFF;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px; /* Increased font size */
+            transition: background-color 0.3s; /* Transition effect */
+        }
+        .edit-button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
         }
         .edit-mode {
             background: #e9f7fe;
@@ -80,6 +86,9 @@
             }
             h2 {
                 font-size: 24px;
+            }
+            .edit-button {
+                font-size: 14px; /* Adjusted font size for smaller screens */
             }
         }
     </style>
@@ -123,7 +132,7 @@
     </div>
 
     <script>
-        const correctPassword = 'yourpassword'; // Replace with your desired password
+        const correctPassword = '06112000'; // Updated password
         let editMode = false;
 
         function toggleEditMode() {
