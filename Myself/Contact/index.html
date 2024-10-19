@@ -91,13 +91,19 @@
             border: 2px solid #007BFF;
             border-radius: 4px;
         }
+        .pay-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
         .send-btn {
-            display: inline-block;
-            padding: 10px 20px;
+            flex: 1;
+            padding: 10px;
             background-color: #007BFF;
             color: #fff;
             font-size: 18px;
             text-decoration: none;
+            text-align: center;
             border-radius: 4px;
             transition: background-color 0.3s ease;
         }
@@ -150,17 +156,22 @@
             <h2>Send Money</h2>
             <label for="amount">Enter Amount:</label>
             <input type="number" id="amount" placeholder="60.00" step="0.01" min="1">
-            <a id="sendButton" class="send-btn" href="https://monzo.me/matthewtaylor89/60.00?h=Xqvzvg" target="_blank">Send</a>
+            <div class="pay-buttons">
+                <a id="starlingButton" class="send-btn" href="https://settleup.starlingbank.com/matthewtaylor22?amount=60&message=Owed" target="_blank">Pay via Starling</a>
+                <a id="monzoButton" class="send-btn" href="https://monzo.me/matthewtaylor89/60.00?d=Owed&h=Xqvzvg" target="_blank">Pay via Monzo</a>
+            </div>
         </div>
     </div>
 
     <script>
         const amountInput = document.getElementById('amount');
-        const sendButton = document.getElementById('sendButton');
+        const starlingButton = document.getElementById('starlingButton');
+        const monzoButton = document.getElementById('monzoButton');
 
         amountInput.addEventListener('input', function() {
             const amount = amountInput.value || '60.00'; // Default to 60.00 if no input
-            sendButton.href = `https://monzo.me/matthewtaylor89/${amount}?h=Xqvzvg`;
+            starlingButton.href = `https://settleup.starlingbank.com/matthewtaylor22?amount=${amount}&message=Owed`;
+            monzoButton.href = `https://monzo.me/matthewtaylor89/${amount}?d=Owed&h=Xqvzvg`;
         });
     </script>
 
