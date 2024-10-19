@@ -23,17 +23,19 @@
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center all content */
         }
         .profile-section {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: center; /* Center the profile image and text */
             margin-bottom: 30px;
         }
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin-right: 30px;
+            margin-bottom: 15px;
             object-fit: cover;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
@@ -57,6 +59,7 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
             color: #007BFF;
+            text-align: center;
         }
         .contact-info p, .bank-details p {
             margin: 10px 0;
@@ -64,6 +67,7 @@
         }
         .social-media-icons {
             display: flex;
+            justify-content: center; /* Center social icons */
             gap: 15px;
             font-size: 28px;
             margin-top: 10px;
@@ -82,19 +86,23 @@
             border-left: 4px solid #007BFF;
             font-size: 16px;
             color: #555;
+            text-align: center; /* Center bank details text */
         }
         .send-money-box input[type="number"] {
             width: 100%;
+            max-width: 300px; /* Limit width for better centering */
             padding: 10px;
             font-size: 18px;
             margin-bottom: 20px;
             border: 2px solid #007BFF;
             border-radius: 4px;
+            text-align: center; /* Center the text input */
         }
         .pay-buttons {
             display: flex;
-            justify-content: space-between;
-            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
         .send-btn {
             flex: 1;
@@ -106,6 +114,7 @@
             text-align: center;
             border-radius: 4px;
             transition: background-color 0.3s ease;
+            max-width: 200px; /* Ensure buttons are uniform */
         }
         .send-btn:hover {
             background-color: #0056b3;
@@ -129,6 +138,7 @@
             <h2>Contact Information</h2>
             <p><strong>Email:</strong> <a href="mailto:yourname@email.com" class="btn">yourname@email.com</a></p>
             <p><strong>Phone:</strong> +123-456-7890</p>
+            <p><strong>Address:</strong> 123 Your Street, Your City, Your Country</p> <!-- New Address Field -->
         </div>
 
         <!-- Social Media Links -->
@@ -139,6 +149,8 @@
                 <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://instagram.com/yourname" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp Link -->
+                <a href="https://t.me/yourtelegramusername" target="_blank"><i class="fab fa-telegram"></i></a> <!-- Telegram Link -->
             </div>
         </div>
 
@@ -159,6 +171,8 @@
             <div class="pay-buttons">
                 <a id="starlingButton" class="send-btn" href="https://settleup.starlingbank.com/matthewtaylor22?amount=60&message=Owed" target="_blank">Pay via Starling</a>
                 <a id="monzoButton" class="send-btn" href="https://monzo.me/matthewtaylor89/60.00?d=Owed&h=Xqvzvg" target="_blank">Pay via Monzo</a>
+                <a id="revolutButton" class="send-btn" href="https://revolut.me/itsmat32143" target="_blank">Pay via Revolut</a>
+                <a id="paypalButton" class="send-btn" href="https://www.paypal.me/itsmat32143" target="_blank">Pay via PayPal</a>
             </div>
         </div>
     </div>
@@ -168,6 +182,7 @@
         const starlingButton = document.getElementById('starlingButton');
         const monzoButton = document.getElementById('monzoButton');
 
+        // Revolut and PayPal don't support dynamic amounts, so their links stay static.
         amountInput.addEventListener('input', function() {
             const amount = amountInput.value || '60.00'; // Default to 60.00 if no input
             starlingButton.href = `https://settleup.starlingbank.com/matthewtaylor22?amount=${amount}&message=Owed`;
