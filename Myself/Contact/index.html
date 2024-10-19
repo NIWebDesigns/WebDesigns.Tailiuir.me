@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - [Your Name]</title>
+    <title>Contact - Matthew Taylor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMW74luI/Tf6rwD5y/pT4jdz+GiYwny6aCkVjHg" crossorigin="anonymous">
     <style>
         * {
@@ -83,7 +83,6 @@
         .bank-details {
             background-color: #f9f9f9;
             padding: 20px;
-            border-left: 4px solid #007BFF;
             font-size: 16px;
             color: #555;
             text-align: center; /* Center bank details text */
@@ -128,7 +127,7 @@
         <div class="profile-section">
             <img src="profile.jpg" alt="Profile Picture" class="profile-img">
             <div class="profile-info">
-                <h1>Your Name</h1>
+                <h1>Matthew Taylor</h1>
                 <p>Professional Title or Company Name</p>
             </div>
         </div>
@@ -136,9 +135,9 @@
         <!-- Contact Information -->
         <div class="contact-info">
             <h2>Contact Information</h2>
-            <p><strong>Email:</strong> <a href="mailto:yourname@email.com" class="btn">yourname@email.com</a></p>
-            <p><strong>Phone:</strong> +123-456-7890</p>
-            <p><strong>Address:</strong> 123 Your Street, Your City, Your Country</p> <!-- New Address Field -->
+            <p><strong>Email:</strong> <a href="mailto:itsmat@duck.com" class="btn">itsmat@duck.com</a></p> <!-- Updated Email -->
+            <p><strong>Phone:</strong> 07471097569</p> <!-- Updated Phone Number -->
+            <p><strong>Address:</strong> Unit 117034, PO Box 6945, London, W1A 6US</p> <!-- Updated Address -->
         </div>
 
         <!-- Social Media Links -->
@@ -157,10 +156,9 @@
         <!-- Bank Details (Sensitive Information) -->
         <div class="bank-details">
             <h2>Bank Details</h2>
-            <p><strong>Bank Name:</strong> Your Bank</p>
-            <p><strong>Account Number:</strong> XXXX-XXXX-XXXX</p>
-            <p><strong>IBAN:</strong> Your IBAN</p>
-            <p><strong>SWIFT/BIC:</strong> Your SWIFT Code</p>
+            <p><strong>Name:</strong> Matthew Taylor</p> <!-- Added Your Name -->
+            <p><strong>Sort Code:</strong> 040004</p> <!-- Added Sort Code -->
+            <p><strong>Account Number:</strong> 05008404</p> <!-- Added Account Number -->
         </div>
 
         <!-- Send Money Section -->
@@ -171,8 +169,6 @@
             <div class="pay-buttons">
                 <a id="starlingButton" class="send-btn" href="https://settleup.starlingbank.com/matthewtaylor22?amount=60&message=Owed" target="_blank">Pay via Starling</a>
                 <a id="monzoButton" class="send-btn" href="https://monzo.me/matthewtaylor89/60.00?d=Owed&h=Xqvzvg" target="_blank">Pay via Monzo</a>
-                <a id="revolutButton" class="send-btn" href="https://revolut.me/itsmat32143" target="_blank">Pay via Revolut</a>
-                <a id="paypalButton" class="send-btn" href="https://www.paypal.me/itsmat32143" target="_blank">Pay via PayPal</a>
             </div>
         </div>
     </div>
@@ -182,7 +178,7 @@
         const starlingButton = document.getElementById('starlingButton');
         const monzoButton = document.getElementById('monzoButton');
 
-        // Revolut and PayPal don't support dynamic amounts, so their links stay static.
+        // Update links with dynamic amount input
         amountInput.addEventListener('input', function() {
             const amount = amountInput.value || '60.00'; // Default to 60.00 if no input
             starlingButton.href = `https://settleup.starlingbank.com/matthewtaylor22?amount=${amount}&message=Owed`;
