@@ -3,88 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - [Your Name]</title>
+    <title>Send Money</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            padding: 20px;
         }
-        .container {
-            max-width: 800px;
+        .send-money-box {
+            max-width: 400px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        h1 {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        .contact-info {
-            margin-top: 20px;
-            line-height: 1.8;
+        .send-money-box h2 {
+            margin-bottom: 20px;
         }
-        .contact-info strong {
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
             font-size: 18px;
+            margin-bottom: 20px;
+            border: 2px solid #007BFF;
+            border-radius: 4px;
         }
-        .social-media {
-            margin-top: 20px;
-        }
-        .social-media a {
+        .send-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 18px;
             text-decoration: none;
-            margin-right: 15px;
-            font-size: 18px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
         }
-        .bank-details {
-            margin-top: 30px;
-            background-color: #f7f7f7;
-            padding: 15px;
-            border-left: 5px solid #007BFF;
+        .send-btn:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Contact Me</h1>
-
-        <!-- Profile Picture -->
-        <div style="text-align: center;">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-        </div>
-
-        <!-- Contact Information -->
-        <div class="contact-info">
-            <p><strong>Name:</strong> Your Name</p>
-            <p><strong>Email:</strong> <a href="mailto:yourname@email.com">yourname@email.com</a></p>
-            <p><strong>Phone:</strong> +123-456-7890</p>
-        </div>
-
-        <!-- Social Media Links -->
-        <div class="social-media">
-            <strong>Find me on social media:</strong><br>
-            <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
-            <a href="https://instagram.com/yourname" target="_blank">Instagram</a>
-            <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
-        </div>
-
-        <!-- Bank Details (Sensitive Information, share privately) -->
-        <div class="bank-details">
-            <strong>Bank Details (Private):</strong><br>
-            Bank Name: Your Bank<br>
-            Account Number: XXXX-XXXX-XXXX<br>
-            IBAN: Your IBAN<br>
-            SWIFT/BIC: Your SWIFT Code
-        </div>
+    <div class="send-money-box">
+        <h2>Send Money</h2>
+        <label for="amount">Enter Amount:</label>
+        <input type="number" id="amount" placeholder="60.00" step="0.01" min="1">
+        <a id="sendButton" class="send-btn" href="https://monzo.me/matthewtaylor89/60.00?h=Xqvzvg" target="_blank">Send</a>
     </div>
+
+    <script>
+        const amountInput = document.getElementById('amount');
+        const sendButton = document.getElementById('sendButton');
+
+        amountInput.addEventListener('input', function() {
+            const amount = amountInput.value || '60.00'; // Default to 60.00 if no input
+            sendButton.href = `https://monzo.me/matthewtaylor89/${amount}?h=Xqvzvg`;
+        });
+    </script>
 
 </body>
 </html>
