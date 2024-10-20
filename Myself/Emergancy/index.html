@@ -55,6 +55,18 @@
             line-height: 1.6;
             margin: 10px 0;
         }
+        .button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 15px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+        }
         .footer {
             margin-top: 30px;
             text-align: center;
@@ -102,8 +114,12 @@
         <!-- GPS Information -->
         <section class="info-section">
             <h2>Location Information</h2>
-            <p><strong>Personal GPS Coordinates:</strong> Latitude, Longitude (e.g., 51.5074, -0.1278)</p> <!-- Replace with your personal GPS coordinates -->
-            <p><strong>Vehicle GPS Coordinates:</strong> Latitude, Longitude (e.g., 51.5074, -0.1278)</p> <!-- Replace with your vehicle GPS coordinates -->
+            <p><strong>Personal GPS Coordinates:</strong> 
+                <a href="https://www.google.com/maps?q=51.5074,-0.1278" class="button" target="_blank">Open Personal GPS</a>
+            </p> 
+            <p><strong>Vehicle GPS Coordinates:</strong> 
+                <a href="https://www.google.com/maps?q=51.5074,-0.1278" class="button" target="_blank">Open Vehicle GPS</a>
+            </p> 
             <p><strong>Nearest Landmark:</strong> Provide a nearby landmark for easy identification</p> <!-- Replace with a landmark -->
             <p><strong>Home Access Instructions:</strong> Details on how to access your home for emergency services</p> <!-- Replace with access instructions -->
         </section>
@@ -117,6 +133,17 @@
             <p><strong>Relationship 2:</strong> Relationship to Contact 2 (e.g., sibling, friend)</p> <!-- Replace with relationship -->
         </section>
 
+        <!-- Travel Information -->
+        <section class="info-section">
+            <h2>Travel Information</h2>
+            <p><strong>Travel Insurance Document:</strong> 
+                <a href="https://example.com/travel-insurance" class="button" target="_blank">Access Insurance Document</a>
+            </p> <!-- Replace with the actual link to your insurance document -->
+            <p><strong>Emergency Contact Abroad:</strong> Provide the name and phone number of someone who can be contacted while traveling.</p> <!-- Replace with contact -->
+            <p><strong>Local Emergency Numbers:</strong> Include local emergency numbers of the country you're visiting.</p> <!-- Replace with emergency numbers -->
+            <p><strong>Preferred Hospital Abroad:</strong> Name of the preferred hospital if you're in a specific location.</p> <!-- Replace with hospital name -->
+        </section>
+
         <!-- Additional Information -->
         <section class="info-section">
             <h2>Additional Information</h2>
@@ -128,10 +155,4 @@
             <p><strong>Instructions for Specific Situations:</strong> Any specific instructions for responders regarding your care</p> <!-- Replace with instructions -->
         </section>
 
-        <footer class="footer">
-            <p>&copy; 2024 Matthew Taylor. All Rights Reserved.</p>
-        </footer>
-    </div>
-
-</body>
-</html>
+        <footer class="footer
