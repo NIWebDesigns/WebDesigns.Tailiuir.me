@@ -57,7 +57,22 @@
             text-decoration: none;
             color: white; /* White text for links */
         }
+        @media print {
+            body {
+                zoom: 80%; /* Adjust content to fit A4 page */
+            }
+        }
     </style>
+    <script>
+        function openWithPassword() {
+            var password = prompt("Please enter the password:");
+            if (password === "06112000") { // Set the password here
+                window.open("https://traklink.trutrakpro.co.uk?Token=3AE819B6-B7A5-4B5A-A16E-6CD1DFF9788C", "_blank");
+            } else {
+                alert("Incorrect password");
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -125,12 +140,12 @@
 <section>
     <h2>GPS Information</h2>
     <button class="link-button" onclick="window.open('your_personal_gps_link', '_blank')">Personal GPS</button>
-    <button class="link-button" onclick="window.open('your_vehicle_gps_link', '_blank')">Vehicle GPS</button>
+    <button class="link-button" onclick="openWithPassword()">Vehicle GPS (Password Protected)</button>
 </section>
 
 <section>
     <h2>Travel Information</h2>
-    <p><strong>Travel Insurance:</strong> [Link to travel insurance documents]</p>
+    <button class="link-button" onclick="window.open('your_travel_insurance_link', '_blank')">Travel Insurance Documents</button>
     <p><strong>Emergency Services Contact:</strong> Local police, fire department, and medical emergency numbers for your travel destination.</p>
 </section>
 
