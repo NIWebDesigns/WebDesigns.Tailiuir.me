@@ -9,39 +9,53 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f5f5f5;
             color: #333;
             text-align: center;
         }
         header {
-            background-color: #4CAF50;
-            padding: 10px;
+            background-color: #007BFF; /* Bright blue */
+            padding: 20px;
             color: white;
+            border-bottom: 5px solid #0056b3; /* Darker blue */
         }
         section {
             background-color: #fff;
-            margin: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
         }
         footer {
             margin-top: 20px;
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: #007BFF;
             color: white;
         }
         button {
             padding: 10px 15px;
-            background-color: #4CAF50;
+            background-color: #28a745; /* Green */
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             margin: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #45a049;
+            background-color: #218838; /* Darker green */
+        }
+        .link-button {
+            background-color: #007BFF; /* Link Button Color */
+        }
+        .link-button:hover {
+            background-color: #0056b3; /* Darker Blue */
+        }
+        a {
+            text-decoration: none;
+            color: white; /* White text for links */
         }
     </style>
 </head>
@@ -110,8 +124,8 @@
 
 <section>
     <h2>GPS Information</h2>
-    <p><strong>Personal GPS:</strong> <a href="your_personal_gps_link" target="_blank">Click here for your personal GPS</a></p>
-    <p><strong>Vehicle GPS:</strong> <a href="your_vehicle_gps_link" target="_blank">Click here for your vehicle GPS</a></p>
+    <button class="link-button" onclick="window.open('your_personal_gps_link', '_blank')">Personal GPS</button>
+    <button class="link-button" onclick="window.open('your_vehicle_gps_link', '_blank')">Vehicle GPS</button>
 </section>
 
 <section>
