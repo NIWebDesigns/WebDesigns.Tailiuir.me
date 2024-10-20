@@ -20,7 +20,7 @@
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-            position: relative; /* Position relative for absolute positioning of button */
+            position: relative;
         }
         h1 {
             color: #007BFF;
@@ -61,36 +61,6 @@
             font-size: 14px;
             color: #777;
         }
-        .edit-button {
-            position: absolute; /* Absolute positioning */
-            top: 20px;
-            right: 20px;
-            padding: 10px 15px; /* Increased padding for better appearance */
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px; /* Increased font size */
-            transition: background-color 0.3s; /* Transition effect */
-        }
-        .edit-button:hover {
-            background-color: #0056b3; /* Darker shade on hover */
-        }
-        .edit-mode {
-            background: #e9f7fe;
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 28px;
-            }
-            h2 {
-                font-size: 24px;
-            }
-            .edit-button {
-                font-size: 14px; /* Adjusted font size for smaller screens */
-            }
-        }
     </style>
 </head>
 <body>
@@ -98,74 +68,70 @@
     <div class="container">
         <h1>Emergency Medical Information</h1>
         
-        <!-- Password Field -->
-        <button class="edit-button" onclick="toggleEditMode()">Edit</button>
-        
-        <!-- Profile Section -->
         <img src="profile.jpg" alt="Profile Picture" class="profile-img"> <!-- Replace with your image -->
-        <h2 id="name" contenteditable="false">Your Name</h2> <!-- Add your name -->
+        <h2>Matthew Taylor</h2> <!-- Replace with your name -->
 
         <!-- Medical Information -->
         <section class="info-section">
             <h2>Medical Details</h2>
-            <p><strong>Allergies:</strong> <span id="allergies" contenteditable="false">List any known allergies (e.g., Penicillin, Nuts)</span></p> <!-- Replace with your allergies -->
-            <p><strong>Medical Conditions:</strong> <span id="conditions" contenteditable="false">List any chronic conditions (e.g., Diabetes, Asthma)</span></p> <!-- Replace with your conditions -->
-            <p><strong>Medications:</strong> <span id="medications" contenteditable="false">List any medications you are currently taking (e.g., Metformin)</span></p> <!-- Replace with your medications -->
+            <p><strong>Allergies:</strong> List any known allergies (e.g., Penicillin, Nuts)</p> <!-- Replace with your allergies -->
+            <p><strong>Medical Conditions:</strong> List any chronic conditions (e.g., Diabetes, Asthma)</p> <!-- Replace with your conditions -->
+            <p><strong>Medications:</strong> List any medications you are currently taking (e.g., Metformin)</p> <!-- Replace with your medications -->
+            <p><strong>Blood Type:</strong> Your blood type (e.g., A+, O-, etc.)</p> <!-- Replace with your blood type -->
+            <p><strong>Last Tetanus Shot:</strong> Date of your last tetanus shot</p> <!-- Replace with the date -->
+            <p><strong>Organ Donor:</strong> Yes/No (indicate if you are an organ donor)</p> <!-- Indicate if you are an organ donor -->
+            <p><strong>Emergency Medical ID Number:</strong> If you have one</p> <!-- Replace with your ID number -->
+            <p><strong>Medical History:</strong> Any past surgeries or significant medical events (e.g., Heart surgery)</p> <!-- Replace with your history -->
+            <p><strong>Living Will:</strong> Yes/No (indicate if you have a living will)</p> <!-- Indicate if you have a living will -->
+            <p><strong>Preferred Hospital:</strong> Name of your preferred hospital (if any)</p> <!-- Replace with your preferred hospital -->
+            <p><strong>Special Requirements:</strong> Any special considerations (e.g., wheelchair access, communication needs)</p> <!-- Replace with your needs -->
+            <p><strong>Medical Number (Northern Ireland):</strong> Your medical number (e.g., 123456789)</p> <!-- Replace with your medical number -->
+        </section>
+
+        <!-- Personal Information -->
+        <section class="info-section">
+            <h2>Personal Information</h2>
+            <p><strong>Address:</strong> Unit 117034, PO Box 6945, London, W1A 6US</p> <!-- Replace with your address -->
+            <p><strong>Date of Birth:</strong> Your date of birth (e.g., 01/01/1990)</p> <!-- Replace with your DOB -->
+            <p><strong>Email:</strong> itsmat@duck.com</p> <!-- Replace with your email -->
+            <p><strong>Phone Number:</strong> +44 7436 976885</p> <!-- Replace with your phone number -->
+            <p><strong>Next of Kin:</strong> Full name and relationship</p> <!-- Replace with your next of kin -->
+            <p><strong>Emergency Medical Contact Protocol:</strong> Instructions on contacting emergency contacts</p> <!-- Replace with protocol -->
+        </section>
+
+        <!-- GPS Information -->
+        <section class="info-section">
+            <h2>Location Information</h2>
+            <p><strong>Personal GPS Coordinates:</strong> Latitude, Longitude (e.g., 51.5074, -0.1278)</p> <!-- Replace with your personal GPS coordinates -->
+            <p><strong>Vehicle GPS Coordinates:</strong> Latitude, Longitude (e.g., 51.5074, -0.1278)</p> <!-- Replace with your vehicle GPS coordinates -->
+            <p><strong>Nearest Landmark:</strong> Provide a nearby landmark for easy identification</p> <!-- Replace with a landmark -->
+            <p><strong>Home Access Instructions:</strong> Details on how to access your home for emergency services</p> <!-- Replace with access instructions -->
         </section>
 
         <!-- Emergency Contacts -->
         <section class="info-section">
             <h2>Emergency Contacts</h2>
-            <p><strong>Contact 1:</strong> <span id="contact1" contenteditable="false">Name - Phone Number (e.g., John Doe - +44 7436 976885)</span></p> <!-- Replace with contact -->
-            <p><strong>Contact 2:</strong> <span id="contact2" contenteditable="false">Name - Phone Number (e.g., Jane Smith - +44 7436 976886)</span></p> <!-- Replace with contact -->
+            <p><strong>Contact 1:</strong> Name - Phone Number (e.g., John Doe - +44 7436 976885)</p> <!-- Replace with contact -->
+            <p><strong>Contact 2:</strong> Name - Phone Number (e.g., Jane Smith - +44 7436 976886)</p> <!-- Replace with contact -->
+            <p><strong>Relationship 1:</strong> Relationship to Contact 1 (e.g., spouse, parent)</p> <!-- Replace with relationship -->
+            <p><strong>Relationship 2:</strong> Relationship to Contact 2 (e.g., sibling, friend)</p> <!-- Replace with relationship -->
         </section>
 
         <!-- Additional Information -->
         <section class="info-section">
             <h2>Additional Information</h2>
-            <p><span id="additionalInfo" contenteditable="false">Any other important information that medical responders should know.</span></p> <!-- Add any additional notes -->
+            <p>Any other important information that medical responders should know.</p> <!-- Add any additional notes -->
+            <p><strong>Medical Insurance:</strong> Insurance provider and policy number</p> <!-- Replace with insurance details -->
+            <p><strong>Preferred Language:</strong> Indicate if you speak a language other than English</p> <!-- Replace with your preferred language -->
+            <p><strong>Known Communication Barriers:</strong> Indicate any barriers to communication (e.g., hearing impairment)</p> <!-- Replace with details -->
+            <p><strong>Medical Alerts:</strong> Information about any medical alert symbols (e.g., bracelets)</p> <!-- Replace with details -->
+            <p><strong>Instructions for Specific Situations:</strong> Any specific instructions for responders regarding your care</p> <!-- Replace with instructions -->
         </section>
 
         <footer class="footer">
-            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+            <p>&copy; 2024 Matthew Taylor. All Rights Reserved.</p>
         </footer>
     </div>
-
-    <script>
-        const correctPassword = '06112000'; // Updated password
-        let editMode = false;
-
-        function toggleEditMode() {
-            if (!editMode) {
-                const password = prompt('Enter password to edit:');
-                if (password === correctPassword) {
-                    enableEdit();
-                } else {
-                    alert('Incorrect password.');
-                }
-            } else {
-                disableEdit();
-            }
-        }
-
-        function enableEdit() {
-            document.querySelectorAll('[contenteditable]').forEach(element => {
-                element.contentEditable = 'true';
-                element.classList.add('edit-mode');
-            });
-            editMode = true;
-            document.querySelector('.edit-button').innerText = 'Save';
-        }
-
-        function disableEdit() {
-            document.querySelectorAll('[contenteditable]').forEach(element => {
-                element.contentEditable = 'false';
-                element.classList.remove('edit-mode');
-            });
-            editMode = false;
-            document.querySelector('.edit-button').innerText = 'Edit';
-        }
-    </script>
 
 </body>
 </html>
