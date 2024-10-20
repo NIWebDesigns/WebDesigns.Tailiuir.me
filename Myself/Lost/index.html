@@ -34,28 +34,10 @@
             font-size: 1.2em;
             margin-bottom: 20px;
         }
-        form {
-            background-color: #333;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        input, textarea {
+        iframe {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #555;
-            background-color: #222;
-            color: #fff;
-            font-size: 1em;
-        }
-        input[type="submit"] {
-            background-color: #007BFF;
+            height: 600px; /* Adjust height as needed */
             border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #0056b3;
         }
     </style>
 </head>
@@ -66,14 +48,9 @@
 </header>
 
 <main>
-    <p>Please leave your contact information below, and I will reach out to you as soon as possible.</p>
+    <p>Please fill out the form below if you've found my lost device. I will reach out to you as soon as possible.</p>
     
-    <form action="submit.php" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Message" rows="5" required></textarea>
-        <input type="submit" value="Submit">
-    </form>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfI7lH0kBBbiPD9s47Tw-r1kVzjSzm1lkf0x7-sSt9FzshjHw/viewform?embedded=true" width="640" height="558" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </main>
 
 </body>
