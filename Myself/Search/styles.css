@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Set background to black */
+    background-color: #000; /* Keep the overall background black */
     color: white;
 }
 
 header {
     text-align: center;
-    background-color: #333;
+    background-color: #333; /* Dark grey background */
     color: white;
     padding: 20px 0;
 }
@@ -21,6 +21,7 @@ h1 {
 
 main {
     padding: 20px;
+    background-color: #333; /* Match the color of the header and footer */
 }
 
 h2 {
@@ -90,7 +91,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #333; /* Match footer color with header */
     color: white;
 }
 
