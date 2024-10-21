@@ -67,16 +67,15 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin: 0 auto; /* Center align buttons */
-    max-width: 100%; /* Ensure the container never exceeds 100% */
-    padding: 0 10px; /* Add padding for a mobile-friendly layout */
+    margin: 0 auto;
+    max-width: 100%;  /* Ensure the container doesn't exceed the screen width */
+    padding: 0; /* Remove unnecessary padding */
 }
 
 #bookmarkButtons button {
-    flex: 1 1 calc(50% - 20px); /* Ensure two buttons per row with space */
-    max-width: 100%; /* Ensure buttons never exceed 100% width */
-    margin: 5px;
+    flex: 1 1 100%;  /* On mobile, all buttons will take full width */
+    margin: 5px 0;
+    max-width: 100%; /* Ensure no button exceeds the width */
 }
 
 footer {
@@ -98,12 +97,18 @@ footer {
     }
 
     #bookmarkButtons {
-        padding: 0 10px; /* Padding to prevent buttons from overflowing */
+        padding: 0 10px; /* Add padding to prevent buttons from touching the edges */
     }
 
     #bookmarkButtons button {
-        flex: 1 1 100%; /* Full width buttons on mobile */
-        max-width: 100%; /* Make sure they fit inside the container */
-        margin: 5px 0; /* Add space between buttons */
+        flex: 1 1 100%;  /* Ensure buttons stack in full width on small screens */
+        margin: 10px 0; /* Add space between buttons */
+    }
+}
+
+/* Larger screens (tablets/desktops) */
+@media (min-width: 768px) {
+    #bookmarkButtons button {
+        flex: 1 1 calc(50% - 20px); /* Buttons side by side (50% width) with gap */
     }
 }
