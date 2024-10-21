@@ -3,7 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #000; /* Set background to black */
+    color: white;
 }
 
 header {
@@ -20,6 +21,12 @@ h1 {
 
 main {
     padding: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .search-container {
@@ -59,23 +66,25 @@ button:hover {
     background-color: #0056b3;
 }
 
-#bookmarks {
-    text-align: center;
+#bookmarks, #resources, #tools {
+    margin-bottom: 40px;
 }
 
-#bookmarkButtons {
+#bookmarkButtons, #resourceButtons, #toolButtons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
     margin: 0 auto;
-    max-width: 100%;  /* Ensure the container doesn't exceed the screen width */
-    padding: 0; /* Remove unnecessary padding */
+    max-width: 100%;
+    padding: 0 10px;
 }
 
-#bookmarkButtons button {
-    flex: 1 1 100%;  /* On mobile, all buttons will take full width */
-    margin: 5px 0;
-    max-width: 100%; /* Ensure no button exceeds the width */
+#bookmarkButtons button, #resourceButtons button, #toolButtons button {
+    flex: 1 1 calc(25% - 20px); /* 4 buttons per row on larger screens */
+    max-width: 100%;
+    margin: 5px;
+    background-color: #444; /* Darker button background */
 }
 
 footer {
@@ -96,19 +105,15 @@ footer {
         padding: 12px;
     }
 
-    #bookmarkButtons {
-        padding: 0 10px; /* Add padding to prevent buttons from touching the edges */
-    }
-
-    #bookmarkButtons button {
-        flex: 1 1 100%;  /* Ensure buttons stack in full width on small screens */
-        margin: 10px 0; /* Add space between buttons */
+    #bookmarkButtons button, #resourceButtons button, #toolButtons button {
+        flex: 1 1 100%;  /* Full width buttons on mobile */
+        margin: 10px 0;
     }
 }
 
-/* Larger screens (tablets/desktops) */
-@media (min-width: 768px) {
-    #bookmarkButtons button {
-        flex: 1 1 calc(50% - 20px); /* Buttons side by side (50% width) with gap */
+/* Larger screens (desktops) */
+@media (min-width: 1024px) {
+    #bookmarkButtons button, #resourceButtons button, #toolButtons button {
+        flex: 1 1 calc(25% - 20px); /* 4 buttons per row on large screens */
     }
 }
