@@ -8,4 +8,5 @@ countries = [
   "emirates",
   "poland",
   "portugal",
+  "malta",
 ];
