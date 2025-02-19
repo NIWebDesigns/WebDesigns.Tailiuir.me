@@ -10,4 +10,5 @@ countries = [
   "portugal",
   "malta",
   "ulster",
+  "switzerland",
 ];
