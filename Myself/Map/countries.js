@@ -11,4 +11,7 @@ countries = [
   "malta",
   "ulster",
   "switzerland",
+  "usa",
+  "ulster",
+  "germany",
 ];
